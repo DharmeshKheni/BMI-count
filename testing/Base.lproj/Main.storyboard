@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kul-54-umk">
+                                <rect key="frame" x="252" y="87" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="EoL-Yu-VRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVH-yC-R0Y">
+                                <rect key="frame" x="252" y="151" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-0z-et5">
+                                <rect key="frame" x="252" y="243" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="4G8-OJ-MB6"/>
+                                    <constraint firstAttribute="height" constant="21" id="DBT-ht-9Zw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hof-v7-wGM">
+                                <rect key="frame" x="274" y="333" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcBmi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAC-vL-wnb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jVH-yC-R0Y" firstAttribute="leading" secondItem="Kul-54-umk" secondAttribute="leading" id="0R4-3A-Ta9"/>
+                            <constraint firstItem="Hof-v7-wGM" firstAttribute="top" secondItem="3RU-0z-et5" secondAttribute="bottom" constant="69" id="QjP-KV-GJ1"/>
+                            <constraint firstItem="jVH-yC-R0Y" firstAttribute="trailing" secondItem="Kul-54-umk" secondAttribute="trailing" id="TH8-0U-Saf"/>
+                            <constraint firstItem="jVH-yC-R0Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X9Q-7R-yXC"/>
+                            <constraint firstItem="jVH-yC-R0Y" firstAttribute="leading" secondItem="3RU-0z-et5" secondAttribute="leading" id="Xcl-2z-hmP"/>
+                            <constraint firstItem="3RU-0z-et5" firstAttribute="centerX" secondItem="Hof-v7-wGM" secondAttribute="centerX" constant="35" id="l6G-xI-Srt"/>
+                            <constraint firstItem="Kul-54-umk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="pLC-l3-9vh"/>
+                            <constraint firstItem="jVH-yC-R0Y" firstAttribute="top" secondItem="Kul-54-umk" secondAttribute="bottom" constant="34" id="vnf-ab-AAq"/>
+                            <constraint firstItem="3RU-0z-et5" firstAttribute="top" secondItem="jVH-yC-R0Y" secondAttribute="bottom" constant="62" id="w8k-iy-nYl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fieldAltezza" destination="Kul-54-umk" id="geN-4O-m7y"/>
+                        <outlet property="fieldPeso" destination="jVH-yC-R0Y" id="bwQ-HD-kkL"/>
+                        <outlet property="labelResult" destination="3RU-0z-et5" id="jYW-AA-S0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="150"/>
+        </scene>
+    </scenes>
+</document>
